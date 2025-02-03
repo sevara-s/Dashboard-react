@@ -1,0 +1,10 @@
+.dashboard {
+    padding: 25px 25px 15px 0;
+  }
+  .yellow_div {
+    border-radius: 0 2px 2px 0;
+    width: 4px;
+    height: 372px;
+    background: #fcb600;
+  }
+  
