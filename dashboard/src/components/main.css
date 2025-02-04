@@ -11,3 +11,29 @@
   box-shadow: 0 2px 2px 0 rgba(174, 176, 181, 0.31);
   background-color: white;
 }
+.add-product-form-container {
+  position: fixed;
+  top: 0;
+  right: -100%; 
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-product-form-container.open {
+  right: 0; 
+}
+
+.add-product-form-container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  display: none;
+}
